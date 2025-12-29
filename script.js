@@ -8,7 +8,7 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
-            
+
             // Trigger number counting animation for trainer stats
             if (entry.target.classList.contains('trainer-text-card')) {
                 animateNumbers(entry.target);
@@ -20,20 +20,20 @@ const observer = new IntersectionObserver((entries) => {
 // Number counting animation function
 function animateNumbers(container) {
     const statNumbers = container.querySelectorAll('.stat-number[data-target]');
-    
+
     statNumbers.forEach(stat => {
         const target = parseInt(stat.getAttribute('data-target'));
         const duration = 2000; // 2 seconds
         const increment = target / (duration / 16); // 60fps
         let current = 0;
-        
+
         const timer = setInterval(() => {
             current += increment;
             if (current >= target) {
                 current = target;
                 clearInterval(timer);
             }
-            
+
             // Format the number with commas for thousands
             const formattedNumber = Math.floor(current).toLocaleString();
             stat.textContent = formattedNumber + '+';
@@ -73,4 +73,28 @@ window.addEventListener('scroll', () => {
         header.style.backdropFilter = 'blur(10px)';
         header.style.boxShadow = '0 2px 10px rgba(139,21,56,0.1)';
     }
+});
+
+// Mobile Menu Toggle
+const mobileMenuBtn = document.querySelector('.mobile-menu-toggle');
+const mainNav = document.querySelector('.main-nav');
+const navLinks = document.querySelectorAll('.nav-links a');
+
+if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenuBtn.classList.toggle('active');
+        mainNav.classList.toggle('active');
+        document.body.style.overflow = mainNav.classList.contains('active') ? 'hidden' : '';
+    });
+}
+
+// Close mobile menu when a link is clicked
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (mainNav.classList.contains('active')) {
+            mobileMenuBtn.classList.remove('active');
+            mainNav.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
 });
