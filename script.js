@@ -61,16 +61,69 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Header background change on scroll
+// Intelligent Header Behavior
+let lastScrollTop = 0;
+const header = document.querySelector('header');
+const scrollThreshold = 200;
+
+// Clean up entrance animation to allow smooth transitions
+header.addEventListener('animationend', () => {
+    header.style.animation = 'none';
+    header.style.opacity = '1';
+    header.style.transform = 'translateY(0)';
+}, { once: true });
+
 window.addEventListener('scroll', () => {
-    const header = document.querySelector('header');
-    if (window.scrollY > 50) {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Handle Navbar Hide/Show
+    if (scrollTop > scrollThreshold) {
+        if (scrollTop > lastScrollTop) {
+            // Scrolling Down
+            header.classList.add('nav-up');
+        } else {
+            // Scrolling Up
+            header.classList.remove('nav-up');
+        }
+    } else {
+        // At the top
+        header.classList.remove('nav-up');
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+
+    // Handle Header Background/Shadow
+    if (scrollTop > 50) {
         header.style.background = 'rgba(255, 255, 255, 0.98)';
         header.style.backdropFilter = 'blur(15px)';
-        header.style.boxShadow = '0 4px 20px rgba(139,21,56,0.15)';
+        header.style.boxShadow = '0 4px 20px rgba(95,1,2,0.15)';
     } else {
         header.style.background = 'rgba(255, 255, 255, 0.95)';
         header.style.backdropFilter = 'blur(10px)';
-        header.style.boxShadow = '0 2px 10px rgba(139,21,56,0.1)';
+        header.style.boxShadow = '0 2px 10px rgba(95,1,2,0.1)';
     }
+});
+// Parallax effect for floating elements
+document.addEventListener('mousemove', (e) => {
+    const shapes = document.querySelectorAll('.floating-shape');
+    const particles = document.querySelectorAll('.floating-particle');
+
+    const mouseX = e.clientX / window.innerWidth;
+    const mouseY = e.clientY / window.innerHeight;
+
+    shapes.forEach((shape, index) => {
+        const speed = (index + 1) * 0.5;
+        const x = (mouseX - 0.5) * speed * 20;
+        const y = (mouseY - 0.5) * speed * 20;
+
+        shape.style.transform = `translate(${x}px, ${y}px)`;
+    });
+
+    particles.forEach((particle, index) => {
+        const speed = (index + 1) * 0.3;
+        const x = (mouseX - 0.5) * speed * 15;
+        const y = (mouseY - 0.5) * speed * 15;
+
+        particle.style.transform = `translate(${x}px, ${y}px)`;
+    });
 });
