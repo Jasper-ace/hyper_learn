@@ -102,6 +102,33 @@ window.addEventListener('scroll', () => {
         header.style.backdropFilter = 'blur(10px)';
         header.style.boxShadow = '0 2px 10px rgba(95,1,2,0.1)';
     }
+
+    // Hero Parallax Effect
+    const heroBg = document.querySelector('.hero-parallax-bg');
+    if (heroBg && scrollTop < window.innerHeight) {
+        // Only run when hero is visible
+        window.requestAnimationFrame(() => {
+            const speed = 0.5;
+            heroBg.style.transform = `translate3d(0, ${scrollTop * speed}px, 0)`;
+        });
+    }
+
+    // Brand Promise Parallax Effect
+    const brandPromise = document.querySelector('.brand-promise-section');
+    if (brandPromise) {
+        const rect = brandPromise.getBoundingClientRect();
+        // Check if section is in viewport
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            window.requestAnimationFrame(() => {
+                const speed = 0.3;
+                // Calculate position relative to the element's position in the document
+                // As we scroll down, we want the background to move down slower than the page (standard parallax)
+                // rect.top is the distance from the top of the viewport
+                const yPos = (rect.top * speed);
+                brandPromise.style.backgroundPosition = `center ${yPos}px`;
+            });
+        }
+    }
 });
 // Parallax effect for floating elements
 document.addEventListener('mousemove', (e) => {
@@ -126,4 +153,29 @@ document.addEventListener('mousemove', (e) => {
 
         particle.style.transform = `translate(${x}px, ${y}px)`;
     });
+});
+
+// Hero Slideshow
+function startSlideshow() {
+    const slides = document.querySelectorAll('.slide');
+    if (slides.length === 0) return;
+
+    let currentSlide = 0;
+    const interval = 5000; // 5 seconds per slide
+
+    setInterval(() => {
+        // Remove active from current
+        slides[currentSlide].classList.remove('active');
+
+        // Calculate next
+        currentSlide = (currentSlide + 1) % slides.length;
+
+        // Add active to next
+        slides[currentSlide].classList.add('active');
+    }, interval);
+}
+
+// Start slideshow when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    startSlideshow();
 });

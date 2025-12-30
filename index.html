@@ -59,16 +59,17 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="assets/image/logo.png" alt="HyperLearn Global Consultancy Logo" class="logo-image">
-                    <span class="logo-text">HyperLearn</span>
+                    <a href="index.html">
+                        <img src="assets/image/HyperLearn.png" alt="HyperLearn Global Consultancy Logo"
+                            class="logo-image">
+                    </a>
                 </div>
+
                 <nav>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#trainer">Trainer</a></li>
-                        <li><a href="#values">Mission & Vision</a></li>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="service.html">Services</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
@@ -76,464 +77,544 @@
         </div>
     </header>
 
+
     <!-- Main Page Content -->
-    <div class="page-content"></div>
-
-    <main>
-        <section class="hero" id="home">
-            <div class="hero-geometric"></div>
-            <div class="hero-overlay-asset"></div>
-            <div class="hero-floating-elements">
-                <div class="floating-shape shape-1"></div>
-                <div class="floating-shape shape-2"></div>
-                <div class="floating-shape shape-3"></div>
-                <div class="floating-shape shape-4"></div>
-                <div class="floating-shape shape-5"></div>
-                <div class="floating-particle particle-1"></div>
-                <div class="floating-particle particle-2"></div>
-                <div class="floating-particle particle-3"></div>
-                <div class="floating-particle particle-4"></div>
-                <div class="floating-particle particle-5"></div>
-                <div class="floating-particle particle-6"></div>
-            </div>
-            <div class="container">
-                <div class="hero-content">
-
-                    <div class="hero-badge">Education • Training • Recruitment</div>
-                    <h1 class="hero-title">HyperLearn <span class="brand-accent">Global Consultancy</span></h1>
-                    <p class="hero-subtitle">Turning Learning into Opportunity</p>
-                    <p class="hero-description">
-                        We are a results-driven education, training, and recruitment consultancy designed to bridge
-                        the gap between learning and real-world opportunity. Our mission is to ensure that education
-                        translates directly into careers, mobility, and workforce readiness through <span
-                            class="brand-accent">accelerated, intentional, and outcome-driven</span> learning
-                        pathways.
-                    </p>
-                    <div class="cta-buttons">
-                        <a href="#services" class="btn btn-primary">Explore Our Services</a>
-                        <a href="#about" class="btn btn-secondary">Learn More</a>
-                    </div>
+    <div class="page-content">
+        <main>
+            <!-- 1. HERO -->
+            <section class="hero" id="home">
+                <!-- Slideshow Background (also serves as parallax target) -->
+                <div class="hero-slideshow hero-parallax-bg">
+                    <div class="slide active" style="background-image: url('assets/image/slideshow/5.png')"></div>
+                    <div class="slide" style="background-image: url('assets/image/slideshow/2.png')"></div>
+                    <div class="slide" style="background-image: url('assets/image/slideshow/3.png')"></div>
+                    <div class="slide" style="background-image: url('assets/image/slideshow/4.png')"></div>
                 </div>
-            </div>
-        </section>
-
-        <section class="section" id="about">
-            <div class="container">
-                <div class="section-header scroll-fade">
-                    <div class="section-badge">Our Philosophy</div>
-                    <h2 class="section-title">Learning That Converts into Opportunity</h2>
-                    <p class="section-subtitle">
-                        HyperLearn stands for learning that immediately translates into opportunity—whether that
-                        means a higher IELTS score, career advancement, migration readiness, academic progression,
-                        or workforce development. Traditional education is often slow, theoretical, and disconnected
-                        from employment. HyperLearn bridges this gap through education with direction, training with
-                        outcomes, and learning with purpose.
-                    </p>
+                <div class="hero-geometric"></div>
+                <div class="hero-overlay-asset"></div>
+                <!-- Floating elements preserved -->
+                <div class="hero-floating-elements">
+                    <div class="floating-shape shape-1"></div>
+                    <div class="floating-shape shape-2"></div>
+                    <div class="floating-shape shape-3"></div>
+                    <div class="floating-shape shape-4"></div>
+                    <div class="floating-shape shape-5"></div>
+                    <div class="floating-particle particle-1"></div>
+                    <div class="floating-particle particle-2"></div>
+                    <div class="floating-particle particle-3"></div>
+                    <div class="floating-particle particle-4"></div>
+                    <div class="floating-particle particle-5"></div>
+                    <div class="floating-particle particle-6"></div>
                 </div>
-                <div class="grid-3">
-                    <div class="card scroll-fade">
-                        <div class="card-icon"><i class="fas fa-rocket"></i></div>
-                        <h3>Who We Serve?</h3>
-                        <p>
-                            <strong>Students</strong> seeking academic progression.<br>
-                            <strong>Migrants</strong> aiming for global opportunities.<br>
-                            <strong>Professionals</strong> advancing their careers.<br>
-                            <strong>Overseas Workers</strong> needing certifications.
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-badge fade-in">Education • Training • Recruitment</div>
+                        <h1 class="hero-title fade-in-delay-1">HyperLearn <span class="brand-accent">Global
+                                Consultancy</span></h1>
+                        <p class="hero-subtitle fade-in-delay-2">Turning Learning into Opportunity.</p>
+                        <p class="hero-description fade-in-delay-2"
+                            style="font-weight: 500; font-size: 1.2rem; color: var(--accent-light-gold);">
+                            Brand Promise: Education with direction. Training with outcomes.
                         </p>
-                    </div>
-                    <div class="card scroll-fade">
-                        <div class="card-icon"><i class="fas fa-book-reader"></i></div>
-                        <h3>What "Learn" Reflects</h3>
-                        <p><strong>Lifelong learning</strong> as a strategic career investment. <strong>Skills
-                                aligned</strong> with real-world demand. <strong>Continuous personal and
-                                professional development</strong> that drives career advancement.</p>
-                    </div>
-                    <div class="card scroll-fade">
-                        <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
-                        <h3>Transformative Learning</h3>
-                        <p>HyperLearn represents <strong>accelerated, intentional, and transformative
-                                learning</strong> that goes beyond traditional classrooms and passive instruction to
-                            deliver real-world results.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section section-alt" id="services">
-            <div class="container">
-                <div class="section-header scroll-fade">
-                    <div class="section-badge">What HyperLearn Solves</div>
-                    <h2 class="section-title">Comprehensive Education & Career Solutions</h2>
-                    <p class="section-subtitle">
-                        Many education and training systems fail to connect learning with employment outcomes.
-                        HyperLearn addresses this by aligning education with workforce demand, designing
-                        career-focused learning pathways, and integrating training, consultancy, and recruitment
-                        solutions. We do not sell courses alone; we build pathways to opportunity.
-                    </p>
-                </div>
-                <div class="grid-3">
-                    <div class="card scroll-fade">
-                        <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
-                        <h3>Educational Consultancy</h3>
-                        <ul
-                            style="list-style: none; padding: 0; margin: 0; line-height: 1.8; color: var(--text-light);">
-                            <li><i class="fas fa-check" style="color: var(--accent-gold); margin-right: 8px;"></i>ETEEAP
-                                Assistance</li>
-                            <li><i class="fas fa-check"
-                                    style="color: var(--accent-gold); margin-right: 8px;"></i>Education Units</li>
-                            <li><i class="fas fa-check"
-                                    style="color: var(--accent-gold); margin-right: 8px;"></i>Graduate Studies</li>
-                        </ul>
-                    </div>
-                    <div class="card scroll-fade">
-                        <div class="card-icon"><i class="fas fa-building"></i></div>
-                        <h3>Corporate Training</h3>
-                        <ul
-                            style="list-style: none; padding: 0; margin: 0; line-height: 1.8; color: var(--text-light);">
-                            <li><i class="fas fa-check"
-                                    style="color: var(--accent-gold); margin-right: 8px;"></i>Business English
-                                Proficiency</li>
-                            <li><i class="fas fa-check"
-                                    style="color: var(--accent-gold); margin-right: 8px;"></i>Corporate Tax Consultancy
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card scroll-fade">
-                        <div class="card-icon"><i class="fas fa-user-tie"></i></div>
-                        <h3>Recruitment Consultancy</h3>
-                        <p>Specialized recruitment solutions connecting global talent with top-tier organizations.</p>
-                    </div>
-                    <div class="card scroll-fade">
-                        <div class="card-icon"><i class="fab fa-linkedin"></i></div>
-                        <h3>CV & LinkedIn Optimization</h3>
-                        <p>Professional CV writing and LinkedIn profile enhancement to maximize visibility and impact.
-                        </p>
-                    </div>
-                    <div class="card scroll-fade">
-                        <div class="card-icon"><i class="fas fa-globe"></i></div>
-                        <h3>International Internship</h3>
-                        <p>Pathways to gain global work experience and cross-cultural professional skills.</p>
-                    </div>
-                    <div class="card scroll-fade">
-                        <div class="card-icon"><i class="fas fa-star"></i></div>
-                        <h3>Other Services</h3>
-                        <p>Tailored solutions including visa assistance, migration consultancy, and skills assessment.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="trainer">
-            <div class="container">
-                <div class="section-header scroll-fade">
-                    <h2 class="section-title">About the Trainer</h2>
-                    <p class="section-subtitle">
-                        Expert IELTS training with proven results and personalized approach to help you achieve your
-                        target band score.
-                    </p>
-                </div>
-                <div class="trainer-card-layout">
-                    <div class="trainer-text-card scroll-fade">
-                        <div class="trainer-card-header">
-                            <h3 class="trainer-name">Jinky Cañares Omelan</h3>
-                            <p class="trainer-title">Licensed Teacher & Certified IELTS Trainer</p>
+                        <div class="cta-buttons fade-in-delay-3">
+                            <a href="#company-profile" class="btn btn-primary">Our Profile</a>
+                            <a href="#contact" class="btn btn-secondary">Connect With Us</a>
                         </div>
-                        <div class="trainer-card-content">
-                            <p>Hi, I'm <strong>Jinky Cañares Omelan</strong>, a <strong>licensed Teacher</strong> and
-                                <strong>certified IELTS Trainer</strong> with
-                                over <strong>five years of international teaching experience</strong>. I have
-                                successfully guided
-                                more than <strong>1,300 learners</strong> to higher band scores through structured,
-                                strategy-based
-                                coaching supported by <strong>500+ positive Google reviews</strong>.
-                            </p>
+                    </div>
+                </div>
+            </section>
 
-                            <p>I hold a <strong>Bachelor's Degree in Secondary Education</strong>, along with
-                                certifications from the
-                                <strong>British Council's IELTS Teacher Training Workshop</strong>,
-                                <strong>TEFL</strong>, <strong>PTE Training</strong>, and a
-                                <strong>KHDA-approved SEN Teaching qualification</strong>. My teaching approach focuses
-                                on <strong>clear
-                                    techniques</strong>, <strong>targeted feedback</strong>, and <strong>exam-aligned
-                                    practice</strong> across all four IELTS
-                                skills.
-                            </p>
+            <!-- 2. COMPANY PROFILE SECTION -->
+            <section class="section" id="company-profile">
+                <div class="container">
+                    <div class="section-header scroll-fade">
+                        <div class="section-badge">Who We Are</div>
+                        <h2 class="section-title">Company Profile</h2>
+                        <p class="section-subtitle">
+                            Bridging the gap between learning and real-world opportunity.
+                        </p>
+                    </div>
 
-                            <p>If you're aiming for a confident and well-prepared IELTS performance whether for
-                                <strong>PR
-                                    application</strong>, <strong>university admission</strong>, <strong>work
-                                    abroad</strong>, or <strong>professional qualification</strong>. I'm
-                                committed to helping you successfully achieve your <strong>target band</strong>.
+                    <!-- About Us removed as per user request -->
+
+                    <!-- Our Philosophy -->
+                    <div class="grid-2">
+                        <div class="card scroll-fade">
+                            <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+                            <h3>Our Philosophy</h3>
+                            <p><strong>Learning That Converts into Opportunity</strong></p>
+                            <p>Hyperlearn stands for learning that immediately translates into opportunity—whether that
+                                means:</p>
+                            <ul style="list-style: none; padding-left: 0; margin-top: 10px; color: var(--text-light);">
+                                <li><i class="fas fa-check" style="color: var(--accent-gold); margin-right: 8px;"></i>A
+                                    higher IELTS score</li>
+                                <li><i class="fas fa-check"
+                                        style="color: var(--accent-gold); margin-right: 8px;"></i>Career advancement or
+                                    migration readiness</li>
+                                <li><i class="fas fa-check"
+                                        style="color: var(--accent-gold); margin-right: 8px;"></i>Academic progression
+                                    (ETEEAP, Master’s, PhD)</li>
+                                <li><i class="fas fa-check"
+                                        style="color: var(--accent-gold); margin-right: 8px;"></i>Workforce readiness
+                                    for companies</li>
+                                <li><i class="fas fa-check"
+                                        style="color: var(--accent-gold); margin-right: 8px;"></i>Talent-to-employment
+                                    pathways</li>
+                            </ul>
+                            <p style="margin-top: 15px;">Traditional education is often slow, theoretical, and
+                                disconnected from employment. Hyperlearn bridges this gap through education with
+                                direction, training with outcomes, and learning with purpose.</p>
+                        </div>
+                        <div class="card scroll-fade">
+                            <div class="card-icon"><i class="fas fa-puzzle-piece"></i></div>
+                            <h3>What HyperLearn Solves</h3>
+                            <p>Many education and training systems fail to connect learning with employment outcomes.
+                                Hyperlearn addresses this by:</p>
+                            <ul style="list-style: none; padding-left: 0; margin-top: 10px; color: var(--text-light);">
+                                <li><i class="fas fa-check"
+                                        style="color: var(--accent-gold); margin-right: 8px;"></i>Aligning education
+                                    with workforce demand</li>
+                                <li><i class="fas fa-check"
+                                        style="color: var(--accent-gold); margin-right: 8px;"></i>Designing
+                                    career-focused learning pathways</li>
+                                <li><i class="fas fa-check"
+                                        style="color: var(--accent-gold); margin-right: 8px;"></i>Integrating training,
+                                    consultancy, and recruitment solutions</li>
+                                <li><i class="fas fa-check"
+                                        style="color: var(--accent-gold); margin-right: 8px;"></i>Supporting individuals
+                                    from skill development to career placement</li>
+                            </ul>
+                            <p style="margin-top: 15px;"><strong>We do not sell courses alone; we build pathways to
+                                    opportunity.</strong></p>
+                        </div>
+                    </div>
+
+                    <!-- What is HyperLearn -->
+                    <div class="grid-2">
+                        <div class="card scroll-fade">
+                            <h3>"Hyper" Symbolizes</h3>
+                            <p><strong>Speed with purpose</strong>—learning that leads to real outcomes, not just
+                                credentials.<br>
+                                <strong>Adaptability</strong> in a rapidly changing global job market.<br>
+                                <strong>High-impact growth</strong> for individuals and organizations.
                             </p>
                         </div>
-                        <div class="trainer-card-stats">
-                            <div class="stat-item">
-                                <div class="stat-number" data-target="1300">0+</div>
-                                <div class="stat-label">Students Trained</div>
+                        <div class="card scroll-fade">
+                            <h3>"Learn" Reflects</h3>
+                            <p><strong>Lifelong learning</strong> as a strategic career investment.<br>
+                                <strong>Skills aligned</strong> with real-world demand.<br>
+                                <strong>Continuous personal and professional development.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. TAGLINE & BRAND PROMISE (Banner) -->
+            <section class="section brand-promise-section">
+                <div class="container">
+                    <div class="brand-promise-content scroll-fade">
+                        <h2 class="brand-promise-title">"Turning Learning into Opportunity."</h2>
+                        <p class="brand-promise-subtitle">Education with direction. Training with outcomes.</p>
+                        <p class="brand-promise-description">Hyperlearn empowers individuals and organizations
+                            through accelerated, outcome-driven learning that converts education into careers and talent
+                            into opportunity.</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- 4. VMGO, CORE VALUES -->
+            <section class="section" id="vmgo">
+                <div class="container">
+                    <div class="section-header scroll-fade">
+                        <div class="section-badge">Our Foundation</div>
+                        <h2 class="section-title">Mission, Vision & Values</h2>
+                        <p class="section-subtitle">The principles that guide our commitment to transforming education
+                            into opportunity.</p>
+                    </div>
+
+                    <!-- Vision & Mission -->
+                    <div class="grid-2">
+                        <div class="card scroll-fade">
+                            <div class="card-icon"><i class="fas fa-eye"></i></div>
+                            <h3>Vision</h3>
+                            <p>To become a leading education and recruitment consultancy that accelerates learning,
+                                empowers talent, and connects people to global career opportunities.</p>
+                        </div>
+                        <div class="card scroll-fade">
+                            <div class="card-icon"><i class="fas fa-bullseye"></i></div>
+                            <h3>Mission</h3>
+                            <p>Hyperlearn exists to deliver outcome-driven education, career development, and
+                                recruitment solutions that equip individuals and organizations with the skills,
+                                credentials, and talent needed to succeed in a competitive global market. We bridge
+                                education and employment by aligning learning pathways with real workforce demand.</p>
+                        </div>
+                    </div>
+
+                    <!-- Core Values -->
+                    <div class="grid-2">
+                        <div class="card scroll-fade">
+                            <div class="card-icon"><i class="fas fa-gem"></i></div>
+                            <h3>HYPER Values</h3>
+                            <div class="values-list">
+                                <p><strong>H</strong> – High-Impact, Purpose-Driven Learning</p>
+                                <p><strong>Y</strong> – Yielding to Excellence & Integrity</p>
+                                <p><strong>P</strong> – People-Centered Growth</p>
+                                <p><strong>E</strong> – Excellence in Execution</p>
+                                <p><strong>R</strong> – Responsiveness & Innovation</p>
                             </div>
-                            <div class="stat-item">
-                                <div class="stat-number" data-target="500">0+</div>
-                                <div class="stat-label">Positive Reviews</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number" data-target="5">0+</div>
-                                <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="card scroll-fade">
+                            <div class="card-icon"><i class="fas fa-hands-helping"></i></div>
+                            <h3>LEARN Values</h3>
+                            <div class="values-list">
+                                <p><strong>L</strong> – Learning with Purpose</p>
+                                <p><strong>E</strong> – Engagement through Collaboration & Trust</p>
+                                <p><strong>A</strong> – Agility in a Global Market</p>
+                                <p><strong>R</strong> – Reverence for God and Ethical Leadership</p>
+                                <p><strong>N</strong> – Nurturing Talent into Opportunity</p>
                             </div>
                         </div>
                     </div>
-                    <div class="trainer-photo-container scroll-fade">
-                        <img src="assets/image/Trainer.png" alt="Jinky Cañares Omelan - IELTS Trainer"
-                            class="trainer-main-image">
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="section section-alt" id="certifications">
-            <div class="container">
-                <div class="section-header scroll-fade">
-                    <div class="section-badge">Credibility & Excellence</div>
-                    <h2 class="section-title">Certifications & Qualifications</h2>
-                    <p class="section-subtitle">
-                        Proven expertise backed by internationally recognized credentials.
-                    </p>
-                </div>
-                <div class="certifications-grid">
-                    <div class="cert-card scroll-fade">
-                        <img src="assets/image/CERTIFIED IELTS TRAINER–BRITISH COUNCIL.png"
-                            alt="Certified IELTS Trainer - British Council">
-                    </div>
-                    <div class="cert-card scroll-fade">
-                        <img src="assets/image/TEFL-CERTIFIED_TEACHER.png" alt="TEFL Certified Teacher">
-                    </div>
-                    <div class="cert-card scroll-fade">
-                        <img src="assets/image/LPT_FRONT.png" alt="Licensed Professional Teacher - Front">
-                    </div>
-                    <div class="cert-card scroll-fade">
-                        <img src="assets/image/LPT_BACK.png" alt="Licensed Professional Teacher - Back">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="company-profile">
-            <div class="container">
-                <div class="section-header scroll-fade">
-                    <div class="section-badge">Company Profile</div>
-                    <h2 class="section-title">About HyperLearn Global Consultancy</h2>
-                    <p class="section-subtitle">
-                        <strong>Brand Promise:</strong> Education with direction. Training with outcomes.
-                    </p>
-                </div>
-                <div class="company-profile-content">
-                    <div class="profile-section scroll-fade">
-                        <h3>About Us</h3>
-                        <p>HyperLearn is a results-driven education, training, and recruitment consultancy designed
-                            to bridge the gap between learning and real-world opportunity. We exist to ensure that
-                            education does not stop at certificates but translates directly into careers, mobility,
-                            and workforce readiness.</p>
-                        <p>Anchored in a fast-changing global market, HyperLearn delivers accelerated, intentional,
-                            and outcome-driven learning pathways for individuals and organizations seeking
-                            measurable growth.</p>
-                    </div>
-
-                    <div class="profile-section scroll-fade">
-                        <h3>HyperLearn Statement</h3>
-                        <div class="statement-box">
-                            <p><em>"HyperLearn empowers individuals and organizations through accelerated,
-                                    outcome-driven learning that converts education into careers and talent into
-                                    opportunity."</em></p>
-                        </div>
-                    </div>
-
-                    <div class="opportunities-grid">
-                        <div class="opportunity-card scroll-fade">
-                            <div class="opportunity-icon"><i class="fas fa-check-circle"></i></div>
-                            <h4>IELTS Success</h4>
-                            <p>Higher IELTS scores for migration and academic goals</p>
-                        </div>
-                        <div class="opportunity-card scroll-fade">
-                            <div class="opportunity-icon"><i class="fas fa-chart-line"></i></div>
-                            <h4>Career Advancement</h4>
-                            <p>Professional growth and migration readiness</p>
-                        </div>
-                        <div class="opportunity-card scroll-fade">
-                            <div class="opportunity-icon"><i class="fas fa-university"></i></div>
-                            <h4>Academic Progression</h4>
-                            <p>ETEEAP, Master's, PhD pathways</p>
-                        </div>
-                        <div class="opportunity-card scroll-fade">
-                            <div class="opportunity-icon"><i class="fas fa-users-cog"></i></div>
-                            <h4>Workforce Readiness</h4>
-                            <p>Corporate training and talent development</p>
-                        </div>
-                        <div class="opportunity-card scroll-fade">
-                            <div class="opportunity-icon"><i class="fas fa-plane-departure"></i></div>
-                            <h4>Global Opportunities</h4>
-                            <p>Talent-to-employment pathways worldwide</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="values">
-            <div class="container">
-                <div class="section-header scroll-fade">
-                    <div class="section-badge">Our Foundation</div>
-                    <h2 class="section-title">Mission, Vision & Investment Opportunity</h2>
-                </div>
-                <div class="grid-3">
-                    <div class="card scroll-fade">
-                        <div class="card-icon"><i class="fas fa-bullseye"></i></div>
-                        <h3>Our Mission</h3>
-                        <p>HyperLearn exists to deliver outcome-driven education, career development, and
-                            recruitment
-                            solutions that equip individuals and organizations with the skills, credentials, and
-                            talent
-                            needed to succeed in a competitive global market. We bridge education and employment by
-                            aligning learning pathways with real workforce demand.</p>
-                    </div>
-                    <div class="card scroll-fade">
-                        <div class="card-icon"><i class="fas fa-eye"></i></div>
-                        <h3>Our Vision</h3>
-                        <p>To become a leading education and recruitment consultancy that accelerates learning,
-                            empowers
-                            talent, and connects people to global career opportunities.</p>
-                    </div>
-                    <div class="card scroll-fade">
-                        <div class="card-icon"><i class="fas fa-chart-pie"></i></div>
+                    <!-- Investor Perspective -->
+                    <div class="investor-perspective-card scroll-fade">
                         <h3>Investor Perspective</h3>
-                        <p>HyperLearn is not just an education company. It is a talent development engine, a career
-                            acceleration platform, and a scalable consultancy model with recurring revenue streams.
-                            By
-                            integrating education, training, recruitment, and consultancy services, we're positioned
-                            for
-                            sustainable growth, global scalability, and long-term value creation.</p>
+                        <div class="grid-3">
+                            <div class="perspective-item">
+                                <div class="perspective-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <p><strong>A talent development engine</strong></p>
+                            </div>
+                            <div class="perspective-item">
+                                <div class="perspective-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <p><strong>A career acceleration platform</strong></p>
+                            </div>
+                            <div class="perspective-item">
+                                <div class="perspective-icon">
+                                    <i class="fas fa-coins"></i>
+                                </div>
+                                <p><strong>A scalable consultancy model with recurring revenue streams</strong></p>
+                            </div>
+                        </div>
+                        <p class="perspective-summary">By integrating education, training,
+                            recruitment, and consultancy services, Hyperlearn is positioned for sustainable growth,
+                            global scalability, and long-term value creation.</p>
                     </div>
                 </div>
-        </section>
+            </section>
 
-        <section class="section section-alt" id="core-values">
+            <!-- 5. ABOUT TRAINER -->
+            <section class="section" id="trainer">
+                <div class="container">
+                    <div class="section-header scroll-fade">
+                        <h2 class="section-title">About the Trainer</h2>
+                        <p class="section-subtitle">
+                            Expert IELTS training with proven results and personalized approach.
+                        </p>
+                    </div>
+                    <div class="trainer-card-layout">
+                        <div class="trainer-text-card scroll-fade">
+                            <div class="trainer-card-header">
+                                <h3 class="trainer-name">Jinky Cañares Omelan</h3>
+                                <p class="trainer-title">Licensed Teacher & Certified IELTS Trainer</p>
+                            </div>
+                            <div class="trainer-card-content">
+                                <p>Hi, I'm <strong>Jinky Cañares Omelan</strong>, a <strong>licensed Teacher</strong>
+                                    and
+                                    <strong>certified IELTS Trainer</strong> with
+                                    over <strong>five years of international teaching experience</strong>. I have
+                                    successfully guided
+                                    more than <strong>1,300 learners</strong> to higher band scores through structured,
+                                    strategy-based
+                                    coaching supported by <strong>500+ positive Google reviews</strong>.
+                                </p>
+
+                                <p>I hold a <strong>Bachelor's Degree in Secondary Education</strong>, along with
+                                    certifications from the
+                                    <strong>British Council's IELTS Teacher Training Workshop</strong>,
+                                    <strong>TEFL</strong>, <strong>PTE Training</strong>, and a
+                                    <strong>KHDA-approved SEN Teaching qualification</strong>.
+                                </p>
+
+                                <p>If you're aiming for a confident and well-prepared IELTS performance whether for
+                                    <strong>PR application</strong>, <strong>university admission</strong>, <strong>work
+                                        abroad</strong>, or <strong>professional qualification</strong>. I'm
+                                    committed to helping you successfully achieve your <strong>target band</strong>.
+                                </p>
+                            </div>
+                            <div class="trainer-card-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number" data-target="1300">0+</div>
+                                    <div class="stat-label">Students Trained</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number" data-target="500">0+</div>
+                                    <div class="stat-label">Positive Reviews</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number" data-target="5">0+</div>
+                                    <div class="stat-label">Years Experience</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trainer-photo-container scroll-fade">
+                            <img src="assets/image/Trainer.png" alt="Jinky Cañares Omelan - IELTS Trainer"
+                                class="trainer-main-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. CERTIFICATIONS & QUALIFICATIONS -->
+            <section class="section section-alt" id="certifications">
+                <div class="container">
+                    <div class="section-header scroll-fade">
+                        <div class="section-badge">Credentials</div>
+                        <h2 class="section-title">Certifications & Qualifications</h2>
+                        <p class="section-subtitle">
+                            Professional credentials and qualifications that ensure quality education and training.
+                        </p>
+                    </div>
+
+                    <div class="certifications-grid">
+                        <div class="cert-card scroll-fade">
+                            <img src="assets/image/CERTIFIED IELTS TRAINER–BRITISH COUNCIL.png"
+                                alt="IELTS Trainer Certification - British Council">
+                        </div>
+                        <div class="cert-card scroll-fade">
+                            <img src="assets/image/TEFL-CERTIFIED_TEACHER.png" alt="TEFL Certified Teacher">
+                        </div>
+                        <div class="cert-card scroll-fade">
+                            <img src="assets/image/LPT_FRONT.png" alt="Licensed Professional Teacher - Front">
+                        </div>
+                        <div class="cert-card scroll-fade">
+                            <img src="assets/image/LPT_BACK.png" alt="Licensed Professional Teacher - Back">
+                        </div>
+                    </div>
+
+                    <!-- Qualification Summary Cards -->
+                    <div class="grid-3" style="margin-top: 60px;">
+                        <div class="card scroll-fade">
+                            <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <h3>Bachelor's Degree</h3>
+                            <p>Secondary Education with specialization in teaching methodologies and educational
+                                psychology.</p>
+                        </div>
+                        <div class="card scroll-fade">
+                            <div class="card-icon"><i class="fas fa-certificate"></i></div>
+                            <h3>IELTS Trainer</h3>
+                            <p>British Council certified IELTS trainer with expertise in all four language skills
+                                assessment.</p>
+                        </div>
+                        <div class="card scroll-fade">
+                            <div class="card-icon"><i class="fas fa-award"></i></div>
+                            <h3>TEFL Certified</h3>
+                            <p>Teaching English as a Foreign Language certification for international students.</p>
+                        </div>
+                        <div class="card scroll-fade">
+                            <div class="card-icon"><i class="fas fa-user-graduate"></i></div>
+                            <h3>PTE Training</h3>
+                            <p>Pearson Test of English training certification for academic and general modules.</p>
+                        </div>
+                        <div class="card scroll-fade">
+                            <div class="card-icon"><i class="fas fa-heart"></i></div>
+                            <h3>SEN Teaching</h3>
+                            <p>KHDA-approved Special Educational Needs teaching qualification for inclusive education.
+                            </p>
+                        </div>
+                        <div class="card scroll-fade">
+                            <div class="card-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                            <h3>Licensed Teacher</h3>
+                            <p>Professional teaching license with 5+ years of international teaching experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- 7. CLIENT TESTIMONIES & FEEDBACKS -->
+            <section class="section section-alt" id="testimonies">
+                <div class="container">
+                    <div class="section-header scroll-fade">
+                        <div class="section-badge">Feedback</div>
+                        <h2 class="section-title">Client Testimonies</h2>
+                        <p class="section-subtitle">Trusted by hundreds of students and professionals worldwide.</p>
+                    </div>
+                    <div class="testimony-gallery scroll-fade">
+                        <div class="testimony-image-wrapper"><img src="assets/image/TESTIMONIES/1.png"
+                                alt="Client Feedback 1"></div>
+                        <div class="testimony-image-wrapper"><img src="assets/image/TESTIMONIES/2.png"
+                                alt="Client Feedback 2"></div>
+                        <div class="testimony-image-wrapper"><img src="assets/image/TESTIMONIES/3.png"
+                                alt="Client Feedback 3"></div>
+                        <div class="testimony-image-wrapper"><img src="assets/image/TESTIMONIES/4.png"
+                                alt="Client Feedback 4"></div>
+                        <div class="testimony-image-wrapper"><img src="assets/image/TESTIMONIES/5.png"
+                                alt="Client Feedback 5"></div>
+                        <div class="testimony-image-wrapper"><img src="assets/image/TESTIMONIES/6.png"
+                                alt="Client Feedback 6"></div>
+                        <div class="testimony-image-wrapper"><img src="assets/image/TESTIMONIES/7.png"
+                                alt="Client Feedback 7"></div>
+                        <div class="testimony-image-wrapper"><img src="assets/image/TESTIMONIES/8.png"
+                                alt="Client Feedback 8"></div>
+                        <div class="testimony-image-wrapper"><img src="assets/image/TESTIMONIES/9.png"
+                                alt="Client Feedback 9"></div>
+                        <div class="testimony-image-wrapper"><img src="assets/image/TESTIMONIES/10.png"
+                                alt="Client Feedback 10"></div>
+                        <div class="testimony-image-wrapper"><img src="assets/image/TESTIMONIES/11.png"
+                                alt="Client Feedback 11"></div>
+                        <div class="testimony-image-wrapper"><img src="assets/image/TESTIMONIES/12.png"
+                                alt="Client Feedback 12"></div>
+                        <div class="testimony-image-wrapper"><img src="assets/image/TESTIMONIES/13.png"
+                                alt="Client Feedback 13"></div>
+                        <div class="testimony-image-wrapper"><img src="assets/image/TESTIMONIES/14.png"
+                                alt="Client Feedback 14"></div>
+                        <div class="testimony-image-wrapper"><img src="assets/image/TESTIMONIES/15.png"
+                                alt="Client Feedback 15"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 8. SOCIAL MEDIA SECTION -->
+            <section class="section social-section">
+                <div class="container">
+                    <div class="section-header scroll-fade">
+                        <div class="section-badge">Stay Connected</div>
+                        <h2 class="section-title">Connect With Us</h2>
+                        <p class="section-subtitle">Follow our journey and stay updated with the latest in education and
+                            career development.</p>
+                    </div>
+                    <div class="social-links-grid scroll-fade">
+                        <a href="https://facebook.com/hyperlearntrainingservices" target="_blank"
+                            class="social-link facebook">
+                            <div class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#" class="social-link instagram">
+                            <div class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" class="social-link linkedin">
+                            <div class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://wa.me/971503266337" class="social-link whatsapp">
+                            <div class="social-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer" id="contact">
             <div class="container">
-                <div class="section-header scroll-fade">
-                    <div class="section-badge">Our Values</div>
-                    <h2 class="section-title">The HYPERLEARN Principles</h2>
-                    <p class="section-subtitle">
-                        Our core values guide every decision and shape every interaction, ensuring we deliver
-                        excellence with integrity and purpose.
-                    </p>
-                </div>
-                <div class="grid-2">
-                    <div class="card values-card scroll-fade">
-                        <div class="card-icon"><i class="fas fa-gem"></i></div>
-                        <h3>HYPER Values</h3>
-                        <p><strong>H</strong> - High-Impact, Purpose-Driven Learning<br>
-                            <strong>Y</strong> - Yielding to Excellence & Integrity<br>
-                            <strong>P</strong> - People-Centered Growth<br>
-                            <strong>E</strong> - Excellence in Execution<br>
-                            <strong>R</strong> - Responsiveness & Innovation
+                <div class="footer-content">
+                    <!-- Column 1: Brand & Map -->
+                    <div class="footer-section footer-brand">
+                        <div class="footer-logo">
+                            <img src="assets/image/logo.png" alt="HyperLearn Logo" class="footer-logo-image">
+                            <span class="footer-logo-text">HyperLearn</span>
+                        </div>
+                        <p class="footer-description">
+                            "Education with direction. Training with outcomes."
                         </p>
+
                     </div>
-                    <div class="card values-card scroll-fade">
-                        <div class="card-icon"><i class="fas fa-hands-helping"></i></div>
-                        <h3>LEARN Values</h3>
-                        <p><strong>L</strong> - Learning with Purpose<br>
-                            <strong>E</strong> - Engagement through Collaboration & Trust<br>
-                            <strong>A</strong> - Agility in a Global Market<br>
-                            <strong>R</strong> - Reverence for God and Ethical Leadership<br>
-                            <strong>N</strong> - Nurturing Talent into Opportunity
-                        </p>
+
+                    <!-- Column 2: Menu -->
+                    <div class="footer-section">
+                        <h4>Menu</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                            <li><a href="service.html">Services</a></li>
+                        </ul>
                     </div>
-                </div>
-            </div>
-        </section>
 
-
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <img src="assets/image/logo.png" alt="HyperLearn Global Consultancy Logo"
-                            class="footer-logo-image">
-                        <span class="footer-logo-text">HyperLearn</span>
+                    <!-- Column 3: More -->
+                    <div class="footer-section">
+                        <h4>More</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
                     </div>
-                    <p class="footer-description">
-                        Turning Learning into Opportunity through results-driven education, training, and
-                        recruitment consultancy services.
-                    </p>
-                    <div class="footer-tagline">
-                        "Education with direction. Training with outcomes."
-                    </div>
-                </div>
 
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#values">Mission & Vision</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Our Services</h4>
-                    <ul class="footer-links">
-                        <li>IELTS Preparation</li>
-                        <li>Academic Progression</li>
-                        <li>Career Development</li>
-                        <li>Workforce Training</li>
-                        <li>Recruitment Solutions</li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <div class="footer-contact">
-                        <div class="contact-item">
-                            <span class="contact-icon map-marker"><i class="fas fa-map-marker-alt"></i></span>
-                            <span>Dubai, UAE</span>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-icon phone"><i class="fas fa-phone"></i></span>
-                            <span>+971 50 326 6337</span>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-icon whatsapp"><i class="fab fa-whatsapp"></i></span>
-                            <span>WhatsApp: +971 50 326 6337</span>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-icon email"><i class="fas fa-envelope"></i></span>
-                            <span>hyperlearntrainingservices@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-icon facebook"><i class="fab fa-facebook-f"></i></span>
-                            <span>facebook.com/hyperlearntrainingservices</span>
+                    <!-- Column 4: Follow Us -->
+                    <div class="footer-section">
+                        <h4>Follow Us</h4>
+                        <div class="footer-social-links">
+                            <a href="https://facebook.com/hyperlearntrainingservices" target="_blank">
+                                <i class="fab fa-facebook-f"></i> Facebook
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i> LinkedIn
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-tiktok"></i> Tiktok
+                            </a>
+                            <a href="https://wa.me/971503266337">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
                         </div>
                     </div>
 
-                    <div class="footer-map" style="margin-top: 20px;">
+                    <!-- Column 5: Reach Us -->
+                    <div class="footer-section">
+                        <h4>Reach Us</h4>
+                        <div class="footer-contact">
+                            <div class="contact-item">
+                                <i class="fas fa-phone contact-icon"></i>
+                                <span>+971 50 326 6337</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope contact-icon"></i>
+                                <span>hyperlearntrainingservices@gmail.com</span>
+                            </div>
+                            <div class="contact-cta">
+                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hyperlearntrainingservices@gmail.com&su=Inquiry%20from%20HyperLearn%20Website"
+                                    target="_blank" class="btn btn-primary">Send Email</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 6: Map -->
+                    <div class="footer-section footer-map-section">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d381854.5686717862!2d55.06268328831765!3d25.075931463953612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e1!3m2!1sen!2sph!4v1767033826786!5m2!1sen!2sph"
-                            width="100%" height="200" style="border:0; border-radius: 8px;" allowfullscreen=""
-                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            width="100%" height="250"
+                            style="border:0; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-bottom-content">
+                        <p>&copy; 2025 HyperLearn Global Consultancy. All rights reserved.</p>
                     </div>
                 </div>
             </div>
-
-            <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <p>&copy; 2025 HyperLearn Global Consultancy. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
     </div>
 
     <script src="script.js"></script>
